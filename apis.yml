@@ -1,8 +1,29 @@
 aid: valid8-financial
 name: VALID8 Financial
-description: VALID8 Financial is a company surfaced as a portfolio company of techstars and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: VALID8 Financial is a Verified Financial Intelligence (VFI) platform
+  founded in 2017 in Seattle that turns raw banking evidence and accounting records
+  into reconciled, evidential-grade transaction data for forensic accountants, CPA
+  firms, law firms, bankruptcy trustees, and government investigators. The AI-powered
+  platform automates extraction and verification of financial evidence across use
+  cases including forensic investigations, financial crime, expert witness support,
+  transaction advisory, bankruptcy and restructuring, and family law. A Techstars
+  portfolio company, VALID8 is SOC 2 Type II audited, HIPAA compliant, and GDPR
+  aligned with a Vanta-hosted trust center, but does not currently publish a
+  developer portal or public API documentation; customers sign in through regional
+  portals (us/ca/eu/uk/aus.valid8.io).
 url: https://raw.githubusercontent.com/api-evangelist/valid8-financial/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/63053e3b38a04b6d6088acba/653af99e5450b02c892c9e7d_Valid8%20Logo%20-%20Navy.svg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +32,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Financial Services
+- Forensic Accounting
+- Fraud Investigation
+- Legal Technology
+- Artificial Intelligence
+- Evidence Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +50,36 @@ maintainers:
 common:
 - type: Website
   url: https://valid8financial.com/
+- type: TrustCenter
+  url: security/valid8-financial-trust-center.yml
+- type: Compliance
+  url: https://valid8financial.com/security-compliance
+- type: DomainSecurity
+  url: security/valid8-financial-domain-security.yml
+- type: LLMsTxt
+  url: llms/valid8-financial-llms.txt
+- type: WellKnown
+  url: well-known/valid8-financial-well-known.yml
+- type: PrivacyPolicy
+  url: https://valid8financial.com/privacy-policy
+- type: Support
+  url: https://valid8financial.com/support
+- type: Blog
+  url: https://www.valid8financial.com/resources
+- type: Login
+  url: https://us.valid8.io/
+- type: GitHubOrganization
+  url: https://github.com/Valid8-Financial
+- type: LinkedIn
+  url: https://www.linkedin.com/company/valid8-financial
+- type: YouTube
+  url: https://www.youtube.com/@valid8_financial
+- type: Careers
+  url: https://valid8financial.com/about/careers
+- type: Contact
+  url: https://valid8financial.com/contact
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1

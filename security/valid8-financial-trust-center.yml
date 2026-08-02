@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: searched
+probe: true
+source: https://trust.valid8financial.com/
+url: https://trust.valid8financial.com/
+certifications:
+- SOC 2
+- HIPAA
+- GDPR
+evidence:
+- source: https://trust.valid8financial.com/
+  keywords:
+  - soc 2
+  - hipaa
+  - trust center
+  - gdpr

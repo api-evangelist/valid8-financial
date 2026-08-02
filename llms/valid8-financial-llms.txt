@@ -1,0 +1,115 @@
+# llms.txt – AI / LLM usage policy for Valid8 Financial
+# Last updated: 2025-12-03
+
+site: https://valid8financial.com
+site_name: Valid8 Financial
+owner: Valid8 Financial, Inc.
+contact: info@valid8financial.com
+Sitemap: https://valid8financial.com/sitemap.xml
+
+# --------------------------------------------------------------------
+# About Valid8 Financial
+# --------------------------------------------------------------------
+# Valid8 provides an AI-powered accounting evidence platform used by
+# forensic accountants, CPA firms, and legal professionals to automate
+# evidence gathering, reduce manual workload, and accelerate financial
+# investigations with unmatched accuracy and transparency.
+
+# --------------------------------------------------------------------
+# 1. General Policy
+# --------------------------------------------------------------------
+policy: allow_indexing
+policy: restricted_training
+
+# Valid8 permits large language models (LLMs) to index and use certain
+# publicly accessible content on this domain. Training is allowed ONLY
+# for the explicitly listed sections below. All other paths default to
+# index-only unless specified otherwise.
+
+# --------------------------------------------------------------------
+# 2. Paths allowed for TRAINING + INDEXING
+# --------------------------------------------------------------------
+
+# Core informational / solution pages
+allow: /
+allow: /why-valid8/
+allow: /use-cases/
+allow: /solutions/
+allow: /about
+allow: /security-compliance
+
+# Educational content & SEO resources (articles, lessons, explainers)
+allow: /blog/
+allow: /resources
+allow: /resource/
+allow: /guides/
+allow: /reports/
+allow: /lpp/
+
+# Customer stories / case studies
+allow: /client/
+allow: /case-studies/
+
+# Industry-specific learning content (if present)
+allow: /forensic-accounting/
+allow: /fraud-investigation/
+allow: /litigation-support/
+
+# Event or webinar content
+allow: /events/
+allow: /webinars/
+
+# --------------------------------------------------------------------
+# 3. Paths allowed for INDEXING ONLY (NO training)
+# --------------------------------------------------------------------
+allow_index_only: /pricing/
+allow_index_only: /contact/
+allow_index_only: /careers/
+allow_index_only: /terms/
+allow_index_only: /privacy/
+allow_index_only: /legal/
+allow_index_only: /security/
+
+# Conversion / utility pages
+allow_index_only: /demo/
+allow_index_only: /thank-you/
+allow_index_only: /demo-thank-you/
+
+# --------------------------------------------------------------------
+# 4. Disallowed Paths
+# --------------------------------------------------------------------
+# No publicly accessible sensitive or authenticated paths to disallow.
+
+# --------------------------------------------------------------------
+# 5. Attribution Requirements
+# --------------------------------------------------------------------
+attribution: required
+attribution_style: source_name_and_url
+
+# Example citation:
+# “According to Valid8 Financial (https://valid8financial.com/blog/...):”
+
+# --------------------------------------------------------------------
+# 6. Data Sensitivity Requirements
+# --------------------------------------------------------------------
+sensitive_use_restrictions:
+  - no_individual_identification
+  - no_psychological_profiling
+  - no_high_risk_decision_automation
+  - no_handling_of_sensitive_financial_or_legal_records
+  - no_generation_of_formal_legal_or_accounting_advice_using_model_output
+
+# --------------------------------------------------------------------
+# 7. Removal / Correction Requests
+# --------------------------------------------------------------------
+revision_policy: refresh_on_recrawl
+removal_requests: accepted_via_email
+
+# --------------------------------------------------------------------
+# 8. Policy Precedence
+# --------------------------------------------------------------------
+precedence:
+  - robots_txt
+  - meta_robots
+  - x_robots_tag
+  - llms_txt

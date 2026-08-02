@@ -1,0 +1,78 @@
+generated: '2026-07-21'
+method: searched
+description: >-
+  Results of probing the /.well-known/ discovery surface for the VALID8
+  Financial hosts (marketing site valid8financial.com, the US regional app
+  portal us.valid8.io, and the Vanta-hosted trust center
+  trust.valid8financial.com). Status is the HTTP code observed at fetch time.
+  us.valid8.io and trust.valid8financial.com answer 200 with a text/html SPA
+  shell for every /.well-known/ path, so those are recorded as
+  present-but-not-a-real-document and not saved. The one real discovery
+  document found was /llms.txt on valid8financial.com (saved verbatim to
+  llms/valid8-financial-llms.txt).
+hosts:
+  - host: https://valid8financial.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        type: text/plain
+        file: ../llms/valid8-financial-llms.txt
+        note: Real published llms.txt (AI/LLM usage policy, last updated 2025-12-03).
+  - host: https://us.valid8.io
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        type: text/html
+        note: SPA shell, not a real security.txt; not saved.
+      - path: /.well-known/openid-configuration
+        status: 200
+        type: text/html
+        note: SPA shell, not a real OIDC discovery document; not saved.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        type: text/html
+        note: SPA shell, not a real document; not saved.
+      - path: /.well-known/api-catalog
+        status: 200
+        type: text/html
+        note: SPA shell, not a real API catalog; not saved.
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        type: text/html
+        note: SPA shell, not a real ai-plugin manifest; not saved.
+  - host: https://trust.valid8financial.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        type: text/html
+        note: Vanta trust-center SPA shell, not a real security.txt; not saved.
+      - path: /.well-known/openid-configuration
+        status: 200
+        type: text/html
+        note: Vanta trust-center SPA shell; not saved.
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        type: text/html
+        note: Vanta trust-center SPA shell; not saved.
+      - path: /.well-known/api-catalog
+        status: 200
+        type: text/html
+        note: Vanta trust-center SPA shell; not saved.
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        type: text/html
+        note: Vanta trust-center SPA shell; not saved.
+  - host: https://valid8.io
+    documents: []
+    note: Apex valid8.io (and app.valid8.io) do not resolve; only regional
+      portals us/ca/eu/uk/aus.valid8.io exist.
