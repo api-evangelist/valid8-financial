@@ -12,6 +12,17 @@ description: VALID8 Financial is a Verified Financial Intelligence (VFI) platfor
   developer portal or public API documentation; customers sign in through regional
   portals (us/ca/eu/uk/aus.valid8.io).
 url: https://raw.githubusercontent.com/api-evangelist/valid8-financial/refs/heads/main/apis.yml
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
